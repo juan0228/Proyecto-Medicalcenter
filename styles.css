@@ -1,0 +1,382 @@
+/* Estilos del contenido principal */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px; /* Ajusta la altura según tu preferencia */
+
+}
+
+.logo img {
+    width: 230px; /* ajusta el valor según tus necesidades */
+    height: auto; /* esto mantiene la proporción original de la imagen */
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 2px solid #ecf0f1;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(52, 73, 94, 0.8);
+    color: #ecf0f1;
+}
+/* Estilos de la sección "Hero" */
+.hero {
+    display: flex; /* Hacer que los elementos sean flexibles */
+    justify-content: space-between; /* Espaciar los elementos horizontalmente */
+    align-items: center; /* Centrar verticalmente los elementos */
+    margin-bottom: 20px;
+}
+
+.inicio-image {
+    width: 50%; /* Ocupar el 50% del ancho */
+    margin: 10px;
+    max-height: 100vh; /* Ocupar el 100% de la altura de la ventana */
+    object-fit: cover; /* Cubrir completamente el contenedor */
+}
+
+.hero-content {
+    width: 40%; /* Ocupar el 40% del ancho */
+    color: #ecf0f1;
+    padding: 20px;
+    margin-left: 30px;
+    box-sizing: border-box;
+    background-color: rgba(44, 62, 80, 0.7);
+    text-align: center;
+}
+
+/* Cambio: Invertir el orden de la imagen y el contenido */
+.hero .inicio-image {
+    order: 2;
+}
+
+.hero .hero-content {
+    order: 1;
+}
+
+.hero-content h2 {
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+}
+h2{
+    text-align: center;
+}
+.services {
+    max-width: 100%;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+    overflow-x: auto; /* Añadido para permitir el desplazamiento horizontal si es necesario */
+    display: flex; /* Cambio: Mostrar los servicios en línea */
+    justify-content: space-around; /* Cambio: Espaciar uniformemente los servicios */
+}
+
+.service {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ecf0f1;
+    padding: 15px;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+    width: 30%; /* Cambio: Ancho del servicio */
+}
+
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service-image {
+    width: 100%; /* Cambio: Ancho de la imagen */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.service-info {
+    flex: 1;
+}
+
+/* Estilos de la sección "Nosotros" */
+.about-us {
+    max-width: 100%;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-us button {
+    background-color: rgba(22, 81, 121, 0.7);
+    color: #ecf0f1;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about-us button:hover {
+    background-color: rgba(24, 105, 160, 0.7);
+}
+
+/* Estilos del pie de página */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+
+/* Estilos específicos para la página de Registro */
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ecf0f1;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: 2px solid #ecf0f1;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(52, 73, 94, 0.8);
+    color: #ecf0f1;
+}
+
+.registration-section {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.registration-form {
+    flex: 1;
+    max-width: 400px; /* Ajuste del ancho del formulario */
+    padding-right: 20px; /* Ajuste para separar el formulario de la imagen */
+}
+
+.registration-form form {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+}
+
+.registration-image {
+    flex: 1;
+}
+
+.registration-image img {
+    width: 100%; /* Hacer que la imagen ocupe el 100% del contenedor */
+    height: auto;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #2c3e50;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+    color: #2c3e50;
+}
+
+input {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+/* Estilos de la sección "Servicios" */
+.services {
+    max-width: 100%;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+p{
+    text-align: center;
+}
+.service {
+    flex: 0 0 auto;
+    width: 25%;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+    position: relative; /* Cambio: Añade posición relativa para el posicionamiento del fondo */
+
+}
+.service::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5%; /* Altura del fondo de color, ajusta según tu preferencia */
+    background-color: #2c3e50; /* Color del fondo, ajusta según tu preferencia */
+}
+.service:hover {
+    transform: scale(1.05);
+}
+
+.service img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.service-info {
+    flex: 1;
+    text-align: center;
+}
+/* Estilos específicos para la sección "Reserva Online" */
+.reserva-section {
+    max-width: 100%;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.reserva-section div {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ecf0f1;
+    padding: 15px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out;
+    width: 30%;
+}
+
+.reserva-section div:hover {
+    transform: scale(1.05);
+}
+
+.reserva-section div h3 {
+    margin-bottom: 10px;
+}
+
+.reserva-section div img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.reserva-section div button {
+    background-color: rgba(52, 152, 219, 0.7);
+    color: #ecf0f1;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.reserva-section div button:hover {
+    background-color: rgba(41, 128, 185, 0.7);
+}
+/* Estilos de la sección de preguntas frecuentes */
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.faq-item {
+    margin-bottom: 40px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadido: sombra */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px; /* Añadido: bordes redondeados para la imagen */
+}
